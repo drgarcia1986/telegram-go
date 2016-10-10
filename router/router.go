@@ -44,6 +44,6 @@ func (r RegexRouter) Resolve(message string) (string, error) {
 }
 
 func New() *RegexRouter {
-	var routes []*route
+	routes := []*route{}
 	return &RegexRouter{routes}
 }
